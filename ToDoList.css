@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    background: #ccc;
+}
+
+body h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-top: 40px;
+}
+
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+#header input {
+    height: 50px;
+    width: 80%;
+    padding-left: 10px;
+    font-size: 2rem;
+}
+
+#btn-add {
+    width: 20%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #fff;
+    background-color: #0000bb;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 90vw;
+    margin-bottom: 12px;
+    box-shadow: 0 0 7px #777777;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.item .circle i {
+    display: none;
+}
+
+.item .circle {
+    background-color: #fff;
+}
+
+.item.clicado {
+    background-color: #bef3c6;
+}
+
+.item.clicado .nomeTarefa {
+    text-decoration: line-through;
+    color: #464646;
+}
+
+.iconeChecagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.nomeTarefa {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 78%;
+    padding-left: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.btnExcluir {
+    width: 10%;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #a1a1a1;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #00bb00;
+}
+
+.item.clicado .circle {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #a1a1a1;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #00bb00;
+}
+
+.item.clicado .circle i {
+    display: block;
+    position: relative;
+    top: 2px;
+    color: #fff;
+}
+
+.excluirTarefa {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #a1a1a1;
+}
+
+.btnExcluir i {
+    font-size: 2.1rem;
+}
